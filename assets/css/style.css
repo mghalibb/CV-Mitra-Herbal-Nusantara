@@ -4068,8 +4068,8 @@ h6 {
 }
 .features-banner img {
   border-radius: 15px;
-  height: 350px;
-  width: 850px;
+  /* height: 350px; */
+  width: 950px;
   /* object-fit: cover; */
 }
 /* features-layout1 */
@@ -4600,7 +4600,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/./assets/images/latest news/1A.jpg');
+  /* background-image: url('/./assets/images/latest news/1A.jpg'); */
   background-size: cover;
   background-position: center;
   transition: transform 0.9s ease, opacity 0.9s ease;
@@ -4612,9 +4612,13 @@ h6 {
 }
 .green-news-item .green-news__img img {
   transition: all 0.9s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .green-news-item:hover .green-news__img img {
   transform: scale(1.02);
+  /* transform: scale(1.1) rotate(1deg); */
 }
 .green-news-item .green__body {
   position: relative;
@@ -6244,9 +6248,13 @@ textarea.form-control {
 }
 .post-news-item .post-news__img img {
   transition: all 0.9s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .post-news-item:hover .post-news__img img {
-  transform: scale(1.1) rotate(1deg);
+  transform: scale(1.02) rotate(1deg);
+  /* transform: scale(1.1) rotate(1deg); */
 }
 .post-news-item .post__body {
   position: relative;
@@ -6426,7 +6434,8 @@ textarea.form-control {
 }
 
 /* Blog Sigle */
-.blog-single .latest-news_titlee {
+/* Newsdecs Sigle */
+.newsdecs .latest-news_titlee {
   text-transform: uppercase;
   font-size: 36px;
   text-align: center;
@@ -6434,12 +6443,107 @@ textarea.form-control {
   margin-top: 110px;
 }
 
-.blog .post-item .post__body {
+.newsdecs .post-item .post__body {
   /* position: relative; */
   /* z-index: 3; */
   /* padding: 0 30px 40px 37px; */
   /* margin-top: -40px; */
 }
+.newsdecs-item {
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  transition: all 0.3s linear;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+.newsdecs-item:hover {
+  box-shadow: 0px 5px 83px 0px rgba(9, 29, 62, 0.15);
+}
+.newsdecs-item .newsdecs__img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 20px 100px;
+  margin-bottom: 30px;
+}
+.newsdecs-item .newsdecs__img img {
+  transition: all 0.9s ease;
+  width: 100%;
+  height: 100%;
+}
+.newsdecs-item:hover .newsdecs__img img {
+  transform: scale(1.1) rotate(1deg);
+}
+.newsdecs-item .newsdecs__body {
+  position: relative;
+  z-index: 3;
+  padding: 0 30px 40px 30px;
+  margin-bottom: 60px;
+  /* margin-top: 30px; */
+}
+.newsdecs-item .newsdecs__title {
+  font-size: 28px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+.newsdecs-item .newsdecs__title a {
+  color: #0e204d;
+}
+.newsdecs-item .newsdecs__title a:hover {
+  color: #21cdc0;
+}
+.newsdecs-item .newsdecs__desc {
+  text-align: justify;
+  font-size: 16px;
+}
+.newsdecs-item .newsdecs__desc img {
+  width: 400px;
+  border-radius: 8px;
+  margin: 20px 0;
+  margin-bottom: 30px;
+}
+.newsdecs-item .newsdecs__meta {
+  /* margin-top: 34px; */
+  /* margin-bottom: 14px; */
+}
+.newsdecs-item .newsdecs__meta > * {
+  position: relative;
+  font-size: 16px;
+  color: #21cdc0;
+  line-height: 1;
+  margin-right: 15px;
+  padding-right: 15px;
+}
+.newsdecs-item .newsdecs__meta > *:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #dedfe3;
+}
+.newsdecs-item .newsdecs__meta > *:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+.newsdecs-item .newsdecs__meta > *:last-child:after {
+  display: none;
+}
+.newsdecs-item .newsdecs__meta a {
+  font-weight: 900;
+}
+.newsdecs-item .newsdecs__meta a:hover {
+  color: #0e204d;
+}
+.newsdecs-item .newsdecs__meta .newsdecs__meta-date i {
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  /* height: 20px; */
+}
+/* Newsdecs Sigle */
 
 .blog-single .post-item .post__img {
   border-radius: 16px;
@@ -8896,6 +9000,7 @@ input[type='radio'] {
 
 .testimonials-layout1 {
   border-radius: 15px;
+  /* background-color: #848e9f; */
 }
 .testimonials-layout1 .slick-dots {
   position: absolute;
@@ -8908,7 +9013,8 @@ input[type='radio'] {
 }
 .testimonials-layout1 .testimonials-wrapper:before {
   font-family: icomoon;
-  content: '\e95c';
+  content: '';
+  /* content: '\e95c'; */
   position: absolute;
   top: -160px;
   left: 0;
